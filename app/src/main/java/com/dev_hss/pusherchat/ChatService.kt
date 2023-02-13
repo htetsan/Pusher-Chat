@@ -1,6 +1,6 @@
 package com.dev_hss.pusherchat
 
-import android.os.Message
+import com.dev_hss.pusherchat.data.Message
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
