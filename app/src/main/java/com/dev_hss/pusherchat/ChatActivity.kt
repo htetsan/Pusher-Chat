@@ -24,10 +24,10 @@ class ChatActivity : AppCompatActivity() {
 
     private lateinit var adapter: MessageAdapter
     private lateinit var mBinding: ActivityChatBinding
-    private val CHANNEL_NAME = "pusher-chat-app-development"
+    private val CHANNEL_NAME = "private-notifications-user_one"
     private val CLUSTER = "ap1"
     private val API_KEY = "7874809b61a13e74bda5"
-    private val EVENT_NAME = "new_message"
+    private val EVENT_NAME = "new-message"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -98,6 +98,7 @@ class ChatActivity : AppCompatActivity() {
     }
 
     private fun setupPusher() {
+        // it is ok just with channel
         val options = PusherOptions()
         options.setCluster(CLUSTER)
 

@@ -1,5 +1,6 @@
 package com.dev_hss.pusherchat.adapters
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -18,6 +19,7 @@ class MessageAdapter(private val context: Context) : RecyclerView.Adapter<Messag
     private val messages: ArrayList<Message> = ArrayList()
     private lateinit var myMessageBinding: MyMessageBinding
     private lateinit var otherMessageBinding: OtherMessageBinding
+    @SuppressLint("NotifyDataSetChanged")
     fun addMessage(message: Message) {
         messages.add(message)
         notifyDataSetChanged()

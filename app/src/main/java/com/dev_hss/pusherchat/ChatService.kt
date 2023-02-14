@@ -12,7 +12,7 @@ interface ChatService {
     fun postMessage(@Body body: Message): Call<Void>
 
     companion object {
-        private const val BASE_URL = "http://10.0.2.2:8080/"
+        private const val BASE_URL = "http://192.168.100.67:8080/"  //current pc's ip
 
         fun create(): ChatService {
             val retrofit = Retrofit.Builder()
